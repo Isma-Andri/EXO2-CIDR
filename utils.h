@@ -1,0 +1,11 @@
+char* to_binary(int a);
+int binary_to_decimal(const char* binary_str);
+void calculer_netmask(int cidr, int netmask[4]);
+void calculer_reseau(int IP[4], int netmask[4], int reseau[4]);
+void calculer_diffusion(int reseau[4], int netmask[4], int diffusion[4]);
+int calculer_nb_hotes(int cidr);
+void afficher_resultats(int IP[4], int netmask[4], int nb_hote, int reseau[4], int diffusion[4]);
+void subdiviser_reseaux(int reseau[4], int netmask[4], int cidr, int sous_cidr);
+int valider_ip(int IP[4]);
+int valider_cidr(int cidr);
+void execution();
